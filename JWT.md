@@ -1,6 +1,48 @@
 # JSON Web Token (JWT)
 ## Introducción
 
+Un JSON Web Token es un token compuesto por tres partes separadas por un punto. Tiene la siguiente forma:
+
+```
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.
+eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTgyMDU5ODUzLCJqdGkiOiJmYWQ0NWQ1MzExZmM0NjRlYWQ1MjhmNGI2Yjc4OGVjZSIsInVzZXJfaWQiOjEsImNhcnJlcmFzIjpbIlciXSwidXNlcm5hbWUiOiJhZG1pbiJ9.LLrL5DM3Q0odd9b7poTG928Tlf_3L9-rrovxrXX1eMk
+```
+
+Aunque parece que no tenga sentido, es en realidad una forma muy compacta de representar una serie de pedidos, junto con una firma para verificar su autenticidad.
+
+La primer parte se denomina "header", e indica cuál es el algoritmo usado para desencriptar la tercer parte del token
+
+```json
+{
+"typ": "JWT",
+"alg": "HS256"
+}
+```
+
+La segunda parte se denomina "payload" y tiene los datos que quieren ser transportados entre el cliente y el servidor.
+En el caso de SADI, es importante saber cuáles son las carreras que el usuario puede ver.
+
+```json
+{
+  "token_type": "refresh",
+  "exp": 1582059853,
+  "jti": "e9b85778f3f44decba69a611e4e1c700",
+  "user_id": 1,
+  "carreras": [
+    "W"
+  ],
+  "username": "admin"
+}
+```
+
+```
+HMACSHA256(
+    base64UrlEncode(header) + "." +
+    base64UrlEncode(payload),
+    clave-secreta
+)
+```
+
 ## Problemas que resuelve
 
 A pesar de que el principal propósito de JWTs es transferir demandas entre dos partes, el aspecto más importante es el de estandarizar una estructura de datos de forma simple y encriptada. 
@@ -31,7 +73,6 @@ Los tokens de acceso son tokens que dan a aquel que lo tenga, el acceso a recurs
 Por el contrario, los tokens de refresh le da permiso a los clientes que pidan un nuevo acceso. Por ejemplo, luego de que un token de acceso expiró, un cliente puede hacer un pedido de un nuevo acceso al servidor de autorización. Para que ésto pueda suceder, es requerido un token de refresh.
 A diferencia de los tokens de acceso, el tiempo de vida del token de refresh suele ser largo.
 
-
 # Gráfico de access y refresh token
 
 La principal diferencia entre el token de acceso y el de refresh, está en la posibilidad de hacer los tokens de acceso fáciles de validar. Un token de acceso que tiene una firma, no hace falta que sea validado por un servidor de autorización.
@@ -53,7 +94,3 @@ JWT usa una variante de Base64 que es segura para URLs. Este encoding basicament
 Los caracteres que se usan como relleno también son removidos.
 Esta variante es conocida como base64url.
 
-
-### Header
-
-### Payload
