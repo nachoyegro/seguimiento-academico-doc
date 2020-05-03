@@ -4,3 +4,4 @@
 - Docker deep dive
 - Python for Data Analysis, 2nd Edition
 - Paper: pandas_a_Foundational_Python_Library_for_Data_Analysis
+- Paper: Best Practices for the Design of RESTful Web Services
