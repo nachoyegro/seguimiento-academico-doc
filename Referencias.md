@@ -7,3 +7,5 @@
 [[7]] R. Fielding, J. Gettys, J. Mogul, H. Frystyk, L. Masinter, P. Leach, and T. Berners-Lee, “Rfc 2616, hypertext transfer protocol – http/1.1,” http://tools.ietf.org/html/rfc2616, 1999.
 [[8]] S. Jauker, “10 Best Practices for better RESTful API,” Mai 2014, URL: http://blog.mwaysolutions.com/2014/06/05/10- best- practices- for-better-restful-api/ [accessed: 2015-02-19].
 [[9]] S. Vinoski, “RESTful Web Services Development Checklist,” Internet Computing, IEEE, vol. 12, no. 6, 2008, pp. 94–96. [Online]. Available: http://ieeexplore.ieee.org/xpls/abs\ all.jsp?arnumber=4670126
+
+[[10]] Docker webpage. >> Buscar documentación oficial
