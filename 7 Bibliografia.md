@@ -7,3 +7,5 @@
 - Paper: Best Practices for the Design of RESTful Web Services
 - jwt handbook
 - Paper: Python as Multi Paradigm Programming Language - Nimit Thaker
+- Beginning Django, D. Rubio
+- Flask Web Development: DEVELOPING WEB APPLICATIONS WITH PYTHON - Miguel Grinberg
