@@ -6,3 +6,4 @@
 - Paper: pandas_a_Foundational_Python_Library_for_Data_Analysis
 - Paper: Best Practices for the Design of RESTful Web Services
 - jwt handbook
+- Paper: Python as Multi Paradigm Programming Language - Nimit Thaker
