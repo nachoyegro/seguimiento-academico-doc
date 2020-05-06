@@ -27,6 +27,13 @@ Esta universidad usa análisis predictivos para identificar a los alumnos que po
 La Universidad de Georgia analizó 2 millones y medio de calificaciones obtenidas por los estudiantes a lo largo de 10 años para crear una lista de factores que predecían qué alumnos son menos probables a graduarse. Este sistema tiene más de 800 alertas, apuntadas a indicarle a los tutores acerca de sus estudiantes y así poder ayudarlos. Por ejemplo, un tutor recibe un alerta cuando un estudiante no recibe una nota satisfactoria en una materia que es fundamental. 
 
 
+## Trabajos relacionados
+
+### eCoach
+ECoach es una aplicación diseñada en la Universidad de Michigan para estudiantes de primer año que toman clases de ciencia, tecnología, ingeniería o matemática. Esta aplicación toma datos que las universidades ya tienen, como las materias que cursó un alumno, las notas, etc.
+Otro aspecto importante de esta aplicación, es que se recibe *feedback* de parte de los alumnos con respecto a materias, profesores, horarios, etc.
+
+
 ## El papel de la Universidad Nacional de Quilmes
 
 La Universidad Nacional de Quilmes tiene en la actualidad alrededor de >>Alumnos<<, y a lo largo de su historia tuvo >>Alumnos<<. Esos alumnos cursaron materias, tuvieron notas, y dejaron información que no está siendo explotada.
@@ -95,6 +102,7 @@ Esta es, quizás, la planilla más cargada de datos ya que trae el historial de 
 
 Esta planilla indica las inscripciones a una materia por parte de un alumno.
 
+>> Tabla 5
 - [Código de Carrera](CARRERAS.md)
 - DNI
 - Legajo
@@ -139,15 +147,10 @@ aunque cada carrerá deberá tener asignadas sus áreas.
 - Predicción de Inscriptos.
 - Análisis de cumplimientos de prerrequisitos según plan de estudios.
 
+## Conclusión
 
-## Trabajos relacionados
+Al implementar esta solución, los datos estarán disponibles para ser consultados por las carreras. Además, existe un potencial para que esta solucion pueda ser extendida en el futuro y que esto implique una mejor experiencia también para los alumnos.
+Llevar a cabo este proyecto implicará una mejora en cuanto a decisiones que se pueden tomar con respecto a los alumnos en pos de una mejor calidad educativa. Ayudará a determinar qué alumnos estan teniendo problemas, qué materias están trabando a los alumnos, cuáles son los alumnos que corren riego de desersión, cuáles están cerca de recibirse, etc.
 
-### eCoach
-ECoach es una aplicación diseáda para estudiantes de primer año que toman clases de ciencia, tecnología, ingeniería o matemática. Esta aplicación toma datos que las universidades ya tienen, como las materias que cursó un alumno, las notas, etc.
-Otro aspecto importante de esta aplicación, es que se recibe *feedback* de parte de los alumnos con respecto a materias, profesores, horarios, etc.
-
----
-
-Llevar a cabo este proyecto implicaría una mejora en cuanto a decisiones que se pueden tomar con respecto a los alumnos en pos de una mejor calidad de la enseñanza.
 
 
