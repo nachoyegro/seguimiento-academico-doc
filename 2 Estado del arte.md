@@ -29,18 +29,79 @@ La Universidad de Georgia analizó 2 millones y medio de calificaciones obtenida
 
 ## El papel de la Universidad Nacional de Quilmes
 
-La Universidad Nacional de Quilmes tiene
->> Poner cuantos alumnos tiene la universidad y como esta creciendo el tema de datos
+La Universidad Nacional de Quilmes tiene en la actualidad alrededor de >>Alumnos<<, y a lo largo de su historia tuvo >>Alumnos<<. Esos alumnos cursaron materias, tuvieron notas, y dejaron información que no está siendo explotada.
+Si un director de una carrera determinada, quisiera tener los datos de sus alumnos, tiene que hacer un pedido formal y esos datos se les son entregados en forma de planilla. Esos datos no están normalizados, y no existe un estándar. Es decir, un año vienen de una forma, y otro año de otra forma diferente.
 
->> Falencias actuales
+### Planillas de datos
 
->> Guarani
+Las planillas de datos que se le son 
+>> Como guarani no tiene datos, las carreras analizan con planillas
 
->> Datos disponibles
+#### Planes de estudio
 
+Los datos de planes de estudio traen información de las materias junto con el área a la que pertenecen, el núcleo, y los créditos, entre otros.
+Las columnas de la planilla es de la siguiente forma:
 
+>> Tabla 2
+- [Código de Carrera](CARRERAS.md)
+- **Plan de Estudios**
+- **Cuatrimestre (sólo número)**
+- [Núcleo](NUCLEOS.md)
+- **Área de Materia**
+- **Cod. de Materia**
+- **Créditos**
+- **Nombre**
 
-Dispersión de datos por planilla
+Con esta información, alcanzaría para tener los datos de las carreras, los planes y las materias.
+
+#### Datos personales
+
+La planilla de datos personales trae la siguiente información en orden: 
+
+>> Tabla 3
+- Legajo
+- DNI
+- Apellido
+- Nombre
+- Email
+- Fecha (formato dd/mm/YYYY)
+- [Código de Carrera](CARRERAS.md)
+- Plan de Estudios
+
+Estos datos son de ayuda para que los directores puedan identificar a los alumnos.
+
+#### Materias cursadas
+
+Esta es, quizás, la planilla más cargada de datos ya que trae el historial de cursadas de una carrera determinada. Cada fila representa la cursada de un alumno en una materia determinada.
+
+>> Tabla 4
+- **Legajo**
+- DNI
+- [Carrera](CARRERAS.md)
+- Regular (?)
+- Calidad (?)
+- **Materia (Código de Guaraní)**
+- **Nombre (de la materia)**
+- **Fecha** *formato dd/mm/yyyy*
+- [Resultado](RESULTADOS.md)
+- **Nota**
+- **Forma de Aprobación**
+- Crédito
+- Acta Promoción
+- Acta Exámen
+- **Plan**
+
+#### Inscripciones
+
+Esta planilla indica las inscripciones a una materia por parte de un alumno.
+
+- [Código de Carrera](CARRERAS.md)
+- DNI
+- Legajo
+- Código de materia
+- Comision
+- Fecha (formato dd/mmm/YYY)
+
 
 ## Análisis de requerimientos
 
@@ -85,12 +146,6 @@ aunque cada carrerá deberá tener asignadas sus áreas.
 ECoach es una aplicación diseáda para estudiantes de primer año que toman clases de ciencia, tecnología, ingeniería o matemática. Esta aplicación toma datos que las universidades ya tienen, como las materias que cursó un alumno, las notas, etc.
 Otro aspecto importante de esta aplicación, es que se recibe *feedback* de parte de los alumnos con respecto a materias, profesores, horarios, etc.
 
-
-### Privacidad y seguridad
-
-
-Privacy and Security Colleges also need to have strong policies in place to ensure the privacy and security of both institutional data and any resulting analysis. Well-articulated policies on privacy and security will also allow colleges to control the flow of these data in a way that can minimize the risk for discrimination and labeling. The Family Educational Rights and Privacy Act (FERPA) is a federal law that protects students’ privacy, particularly their education records.131It allows all students to review and correct their education records, and requires that they provide their consent before a school can disclose information in their records.132 Any school or college that receives support from the U.S. Department of Education must comply with this law.133FERPA, which Congress created in 1974, has not been significantly updated since 2001,134 despite the fact that the technology and education fields have changed dramatically since then. Colleges today are collecting and using new kinds of student data, which may fall under a student’s educational record that is protected by FERPA. For example, many colleges consider advising records to be an educational record.135 Early-alert systems often rely on records from advisors that help determine the appropriate next steps for a student after each visit. Sharing these records without the student’s consent or with parties without a legitimate educational interest may be a violation of FERPA. 136Likewise, the common red, yellow, and green labels in early-alert systems used by advisors denoting whether or not a student is at-risk may themselves be considered advising records and therefore protected by FERPA. Colleges should continue to ensure that students know they have the right to review and correct their records, as well get permission from the student before sharing these with parties without a legitimate educational interest. Colleges may also want to ensure that parties with a legitimate educational interest only use student and institutional data for educational purposes. Beyond FERPA, colleges must deal with getting informed consent from students and, at times, faculty to collect and use their data for predictive modelling. For example, students going through the financial aid application process may not be aware that the information they agree to share with institutions is being used to prioritize how the college will target their recruitment and institutional aid. Once in college, students may benefit from early-alert and recommender systems that rely on predictive modelling. However, students should at least be made aware that their data are being used for these purposes, if not required to give informed consent before such tools are used. Oftentimes, data about students are shared within the institution and with outside vendors to create predictive models for early-alert and recommender systems. When this happens, students and faculty should remain anonymous, or at the very least be 
-EDUCATION POLICYThe Promise and Peril of Predictive Analytics in Higher Education: A Landscape Analysis17de-identified to the fullest extent possible. This may, however, be harder to do with the large data sets that predictive modelling often requires.137 As the amount of data in a single dataset that can be linked back together increases, the potential to re-identify student and faculty records increases.138Information security is also a major concern for all kinds of institutions, including colleges.139 The use of big data only heightens these concerns because it has increased the amount, speed, and complexity of information that can be collected, stored, and shared within an institution and with vendors.140Student and institutional data should be secured wherever it is located. Colleges must be certain that this information is properly secured, not only on campus but also when handed over to vendors. Institutions are beginning to tackle evolving data privacy concerns. The University of California system has, for example, hired a chief privacy officer (CPO) at each of its campuses.141,142 But this position is still new and rare across higher education.143 The relatively new CPO at the University of California at Los Angeles has worked with the school’s Data Governance Task Force to produce a report on how data governance should be conducted at the university.144 The report outlines principles for how data about faculty, students, and staff should be used. The report also proposes a governance structure that facilitates the ethical and appropriate use of these data, and day-to-day practices that will support these goals.145Data privacy and security need to be addressed across higher education. But the increasing use of big data in algorithms that guide more and more tools on campus makes this work even more urgent. Colleges need to put in place policies and procedures to address these concerns as they increase their use of student data. A failure to do so may not be as vivid as Newman’s remarks—which made national news and cost him his job—but such a failure could impact many more people.
 ---
 
 Llevar a cabo este proyecto implicaría una mejora en cuanto a decisiones que se pueden tomar con respecto a los alumnos en pos de una mejor calidad de la enseñanza.
