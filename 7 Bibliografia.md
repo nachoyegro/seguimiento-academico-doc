@@ -10,3 +10,7 @@
 - Beginning Django, D. Rubio
 - Flask Web Development: DEVELOPING WEB APPLICATIONS WITH PYTHON - Miguel Grinberg
 - React Handbook
+- Nginx: a practical guide to high performance
+- THE PROMISE AND PERIL OF PREDICTIVE ANALYTICS IN HIGHER EDUCATION
+- How Universities Deploy Student Data
+- Data Science A-Z™ by Kirell Emenko.

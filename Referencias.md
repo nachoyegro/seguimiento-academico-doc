@@ -10,3 +10,6 @@
 
 [[10]] Docker webpage. >> Buscar documentación oficial
 [[11]] Documentacion oficial de flask. >> Poner link
+[[12]] says vice president and Chief Information Officer Opinder Bawa.
+[[13]] says director of Strategic Ini- tiatives and Assessment for Student Af- fairs Ashli Grabau
+[[14]] IDC's Digital Universe Study
