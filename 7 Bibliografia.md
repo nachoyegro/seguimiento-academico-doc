@@ -9,3 +9,4 @@
 - Paper: Python as Multi Paradigm Programming Language - Nimit Thaker
 - Beginning Django, D. Rubio
 - Flask Web Development: DEVELOPING WEB APPLICATIONS WITH PYTHON - Miguel Grinberg
+- React Handbook
