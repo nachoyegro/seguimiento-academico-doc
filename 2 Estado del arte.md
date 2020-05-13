@@ -41,8 +41,7 @@ Si un director de una carrera determinada, quisiera tener los datos de sus alumn
 
 ### Planillas de datos
 
-Las planillas de datos que se le son 
->> Como guarani no tiene datos, las carreras analizan con planillas
+Las planillas que se le son entregadas a las carreras de la Universidad Nacional de Quilmes a través de un pedido son las siguientes.
 
 #### Planes de estudio
 
